@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+//import 'tui-image-editor/dist/tui-image-editor.css';
+//import ImageEditor from '@toast-ui/react-image-editor';
+import ImageEditorComponent from './component/ImageEditorComponent';
+import ImageEditorComponentWithUI from './component/ImageEditorComponentWithUI';
+//import React, { useRef, useState, useEffect } from 'react';
+//import axios from 'axios';
 
-function App() {
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ImageEditorComponent />
+      {/* <ImageEditorComponentWithUI /> */}
     </div>
   );
-}
+};
 
 export default App;

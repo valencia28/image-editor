@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*전체 바디 부분*/
+.main{
+  background-color: #2b2a2a;
+  color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0px;
+}
+
+/*캔버스 부분*/
+.canvas-area{
+  margin-left: 90px;
+}
+
+/*캔버스 상단 메뉴: undo, redo 등*/
+.top-nav{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav-function-area{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 450px;
+  margin-bottom: 5px;
+  padding: 7px 13px;
+  border-radius: 2px;
+}
+
+.top-nav-function-area button{
+  margin-right: 15px;
+  color: white;
+  background-color:  #2b2a2a;
+  background-color:  #363535;
+  border: none;
+  font-size: 25px;  
+}
+
+.undo-redo{
+  margin-right: 15px;
+}
+
+.file-load-btn-area{
+  display: flex;
+}
+
+.file-load-btn-area button{
+  margin-right: 15px;
+  color: white;
+  background-color:  #2b2a2a;
+  background-color:  #363535;
+  border: none;
+  font-size: 20px; 
+}
+
+
+/*이미지 편집 바탕*/
+.canvas-background{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  position: relative;
+  width: 1300px;
+  height: 650px;
+
+
+  
+  /* background-color:  #363535; */
+}
+
+/*사용자가 업로드하는 이미지 가운데 캔버스 가운데 위치*/
+.tui-image-editor {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*drawing*/
+.drawing-mode-controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  outline: none;
+}
+
+.drawing-mode-controls button.active {
+  border-color: #007bff;
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+/*Zoom*/
+/* .image-editor-container {
+  cursor: grab; /* Default cursor for dragging 
+} */
+
+/* .image-editor-container:active {
+  cursor: grabbing; /* Cursor when dragging 
+} */
+
+
